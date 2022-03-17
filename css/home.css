@@ -67,7 +67,6 @@ header .logo
 .tekst1{
   position: absolute;
   z-index: 2;
-  bottom: 20px;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -75,13 +74,15 @@ header .logo
   color: white;
   width: 45%;
   position: relative;
-  top: 16vw;
+  float: right;
+  right:25vw;
+  top: 18vw;
+
 }
 img {
  position: relative;
- top: 2vh;
+ top: 5vh;
  z-index: 10;
- /*margin-left: 45vw;*/
 }
 .social
 {
