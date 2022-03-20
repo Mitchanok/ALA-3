@@ -65,14 +65,11 @@ header .logo
 }
 
 .tekst1{
-  position: absolute;
   z-index: 2;
-  display: flex;
   justify-content:center;
   align-items: center;
-  text-align: center;
   color: white;
-  width: 45%;
+  width: 28%;
   position: relative;
   float: right;
   right:25vw;
@@ -83,6 +80,12 @@ img {
  position: relative;
  top: 5vh;
  z-index: 10;
+}
+button{
+  color:aliceblue;
+  z-index: 5;
+  background-color: aquamarine;
+  border-radius: 3px;
 }
 .social
 {
@@ -100,7 +103,7 @@ img {
 .social li a
 {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 18px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;

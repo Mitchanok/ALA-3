@@ -43,7 +43,7 @@ header .logo
   background-position: center;
   cursor: pointer;
 }
-.showcase
+/*.showcase
 {
   position: absolute;
   right: 0;
@@ -62,7 +62,7 @@ header .logo
 .showcase.active
 {
   right: 300px;
-}
+}*/
 
 
 .social
