@@ -43,26 +43,6 @@ header .logo
   background-position: center;
   cursor: pointer;
 }
-/*.showcase
-{
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111;
-  transition: 0.5s;
-  z-index: 2;
-  background-color:#FFAD00;
-
-}
-.showcase.active
-{
-  right: 300px;
-}*/
 
 
 .social
