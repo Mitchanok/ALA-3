@@ -120,6 +120,61 @@ header .logo
   color: lightgrey; 
 }
 
+.calculator-grid{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  z-index: 11;
+}
+.calculator-grid > button{
+  cursor:pointer;
+  font-size: 2rem;
+  border: 2px solid white;
+  outline: none;
+  background-color:rgba(190, 190, 243, .75);
+  z-index: 11;
+}
+.calculator-grid > button:hover{
+  background-color:lightgrey;
+}
+.clear{
+  grid-column: span 2;
+  z-index: 11;
+}
+.uitkomst{
+  grid-column: span 3;
+  z-index: 11;
+}
+.Restwaarde{
+  grid-row: span 2;
+  z-index: 11;
+}
+.output{
+  grid-column: 1 / -1;
+  background-image: linear-gradient(rgb(216, 123, 10),rgb(255, 123, 0));
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  z-index: 11;
+}
+.output .previous-operand{
+  color: rgba(255, 255, 255,  .75);
+  font-size: 1.5rem;
+  z-index: 11;
+}
+.output .current-operand{
+  color:white;
+  font-size: 2.5rem;
+  z-index: 11;
+}
+
 @media (max-width: 991px)
 {
   .showcase,

@@ -1,12 +1,4 @@
-const menuToggle = document.querySelector('.toggle');
-      const showcase = document.querySelector('.showcase');
-
-      menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        showcase.classList.toggle('active');
-      })
-
-      import SlideContent from './controllers/slidecontent.js'
+import SlideContent from './controllers/slidecontent.js'
       import SlideNumber from './controllers/slidenumber.js'
       import Backgrounds from './controllers/backgrounds.js'
       import AutoAnimate from './controllers/autoanimate.js'

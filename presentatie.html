@@ -11,57 +11,33 @@
         <title>Math Mate</title>
     </head>
     <link rel="stylesheet" href="css/presentatie.css">
-    <link rel="stylesheet" href="css/reveal.scss">
-    <link rel="stylesheet" href="css/reset.scss">
-    <link rel="stylesheet" href="css/theme/black.scss">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/theme/black.css">
 
 
-
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
     <body>
-<section class="showcase">
-    <header>
-      <h2 class="logo">Math</h2>
-      <div class="toggle"></div>
-    </header>
-  </section>
-  <div class="reveal">
-  <div class="slides">
-    <section data-markdown>slide 1</section>
-    <section>slide 2</section>
-    <section>
-    <section>slide 2-1</section>
-    <section>slide 2-2</section>
-    <section>slide 2-3</section>
-    <section>slide 2-4</section>
-   </section>
-     <section>slide 3</section>
-     <section>slide 4</section>
-  </div>
-  </div>
-  <div class="menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="calculator.html">calculator</a></li>
-      <li><a href="presentatie.html">presentatie</a></li>
-      <li><a href="over.html">over ons</a></li>
-    </ul>
-  </div>
-  <ul class="social">
-    <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-    <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-    <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-  </ul>
-  </body>
-  <script src="js/reveal.js"></script>
- <script>
-    Reveal.initialize(
-      {
-         controls: true,
-         slideNumber: true,
-         hash: true,
-         touch: true,
-         transition:'fade'
-      }
-    );
- </script>
+      <div class="reveal">
+        <div class="slides">
+          <section>Slide 1
+            <button><a href="index.html">home</a></button>
+          </section>
+          <section>Slide 2</section>
+        </div>
+      </div>
+  
+      <script src="dist/reveal.js"></script>
+      <script src="plugin/notes/notes.js"></script>
+      <script src="plugin/markdown/markdown.js"></script>
+      <script src="plugin/highlight/highlight.js"></script>
+      <script>
+        
+        Reveal.initialize({
+          hash: true,
+  
+          
+          plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+      </script>
 </html>
