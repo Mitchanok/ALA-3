@@ -26,15 +26,55 @@
       <li><a href="omrekenen.html">omrekenen</a></li>
     </ul>
   </div>
+
+  <form name="form">
+    <input type="text" name="textview" class="textview">
+   </form>
+ 
+   <section class="clearfix">
+    <article class="col-3"><input type="button" value="C" class="button top-button" onclick="clean();"></article>
+    <article class="col-3"><input type="button" value="Del" class="button top-button" onclick="back();"></article>
+    <article class="col-3"><input type="button" value="&pi;" class="button top-button" onclick= "insert (Math.PI)"></article>
+    <article class="col-3"><input type="button" value="&#247;" class="button operator" onclick="insert('/')"></article>
+   </section>
+ 
+   <section class="clearfix">
+    <article class="col-3"><input type="button" value="7" class="button" onclick="insert(7);"></article>
+    <article class="col-3"><input type="button" value="8" class="button" onclick="insert(8);"></article>
+    <article class="col-3"><input type="button" value="9" class="button" onclick="insert(9);"></article>
+    <article class="col-3"><input type="button" value="&#215;" class="button operator" onclick="insert('*');"></article>
+   </section>
+ 
+   <section class="clearfix">
+    <article class="col-3"><input type="button" value="4" class="button" onclick="insert(4);"></article>
+    <article class="col-3"><input type="button" value="5" class="button" onclick="insert(5);"></article>
+    <article class="col-3"><input type="button" value="6" class="button" onclick="insert(6);"></article>
+    <article class="col-3"><input type="button" value="&#8722;" class="button operator" onclick="insert('-');"></article>
+   </section>
+   <section class="clearfix">
+    <article class="col-3"><input type="button" value="1" class="button" onclick="insert(1);"></article>
+    <article class="col-3"><input type="button" value="2" class="button" onclick="insert(2);"></article>
+    <article class="col-3"><input type="button" value="3" class="button" onclick="insert(3);"></article>
+    <article class="col-3"><input type="button" value="&#43;" class="button operator" onclick="insert('+');"></article>
+ </article>
+ 
+    
+   </section>
+ 
+   <section class="clearfix">
+    <article class="col-3"><input type="button" value="." class="button" onclick="insert('.');"></article>
+    <article class="col-3"><input type="button" value="0" class="button" onclick="insert(0);"></article>
+    <article class="col-6"><input type="button" value="&#61;" class="button equal" onclick="equal();"></article>
+   </section>
+
   <ul class="social">
     <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
     <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
     <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
   </ul>
 
-  
-
   </body>
   <script src="js/home.js"></script>
-  <script src="script.js" defer></script>
+  <script src="srcipt.js"></script>
+
 </html>
