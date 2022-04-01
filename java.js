@@ -28,7 +28,9 @@ function machten(){
 function kwadraten(){
     document.getElementById("kwdraat.antwoord").innerHTML= " ";
     let getal1 = document.getElementById("kwadraten").value;
-    for(let i=1 ; i<=getal1; i++){
+    for(let i =1 ; i <=getal1; i++)
+    {
         document.getElementById("kwdraat.antwoord").innerHTML = Math.sqrt(getal1);
-}document.getElementById('bereken.kwadraten').addEventListener('click', kwadraten)
+}
+document.getElementById('bereken.kwadraten').addEventListener('click', kwadraten)
 }
