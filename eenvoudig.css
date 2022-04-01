@@ -1,0 +1,25 @@
+#cal{
+    position: relative;
+    top:20vh;
+    left: 10vh;
+    z-index: 10;
+}
+
+h1{
+    color: azure;
+}
+
+button{
+    border-radius: 30px;
+    padding: 5px;
+    background-image: linear-gradient(to right, red , orange);
+    color: darkblue;
+    font-size: 1.rem;
+}
+
+input{
+    width: 10%;
+    border-radius: 10px;
+    text-align: center;
+
+}
