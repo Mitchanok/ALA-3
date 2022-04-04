@@ -100,13 +100,4 @@ header .logo
 {
   color: lightgrey; 
 }
- */
-.main{
-  text-align: center;
-  width: 400px;
-  margin: 80px auto;
-  padding: 30px;
-  position: fixed;
-  z-index: 2;
- }
-
+ 

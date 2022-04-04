@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="language" content="NL">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mitchanok Marcano">
+        <meta name="keywords" content="">
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="css/omrekenen.css">
+    <link rel="stylesheet" href="css/om.css">
+
+    <body>
+<section class="showcase">
+    <header>
+      <h2 class="logo">Math</h2>
+      <div class="toggle"></div>
+    </header>
+  </section>
+  <div class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calculator.html">calculator</a></li>
+        <li><a href="eenvoudige.html">eenvoudige reeksen</a></li>
+        <li><a href="complexe.html">complexe reeksen</a></li>
+        <li><a href="omrekenen.html">omrekenen</a></li>
+    </ul>
+  </div>
+  <ul class="social">
+    <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+    <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+    <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+  </ul>
+  <section id="main">
+  <form id="conv_numerals_ext" class="extended-form" action="/nl/talstelsel/" onsubmit="execute_numerals_ext(true); return false;" method="post">
+
+    <p style="margin-top: 10px">
+    Typ het aantal <strong>Decimaal</strong> dat u wilt converteren in het tekstvak, om de resultaten in de tabel te zien.</p>
+    
+    <p style="clear:both">
+    <input type="text" value="100" name="amount" aria-label="Hoeveelheid" class="form-control extended-amount didFocus" style="text-align: right;">
+    
+    <select name="unit_from" aria-label="Van" id="from_numerals" class="form-control extended-from">
+    <option disabled="disabled" class="title">Positioneel getalsysteem</option>
+    <option value="2||binary">Binair</option>
+    <option value="3||ternary">3-tallig stelsel</option>
+    <option value="4||quaternary">4-tallig stelsel</option>
+    <option value="5||quinary">5-tallig stelsel</option>
+    <option value="6||senary">6-tallig stelsel</option>
+    <option value="7||septenary">7-tallig stelsel</option>
+    <option value="8||octal">Octaal</option>
+    <option value="9||nonary">9-tallig stelsel</option>
+    <option value="10||decimal" selected="selected">Decimaal</option>
+    <option value="11||undecimal">11-tallig stelsel</option>
+    <option value="12||duodecimal">12-tallig stelsel</option>
+    <option value="13||base 13">13-tallig stelsel</option>
+    <option value="16||hexadecimal">Hexadecimaal</option>
+    <option value="20||vigesimal">20-tallig stelsel</option>
+    <option disabled="disabled">&nbsp;</option>
+    <option disabled="disabled" class="title">Getalsysteem</option>
+    <option value="A||arabic">Arabisch-Indische cijfers</option>
+    <option value="R||Roman">Romeinse cijfers</option>
+    </select>
+    <a href="#" onclick="converterChange('numerals_ext', false);return false;">
+    <img class="change" src="/static/images/trans.png" alt="Andere conversie" title="Andere conversie" width="16" height="21">
+    </a>
+    
+    <select name="unit_to" aria-label="To" id="to_numerals" class="form-control extended-to less-space">
+    <option disabled="disabled" class="title">Positioneel getalsysteem</option>
+    <option value="2||binary">Binair</option>
+    <option value="3||ternary">3-tallig stelsel</option>
+    <option value="4||quaternary">4-tallig stelsel</option>
+    <option value="5||quinary">5-tallig stelsel</option>
+    <option value="6||senary">6-tallig stelsel</option>
+    <option value="7||septenary">7-tallig stelsel</option>
+    <option value="8||octal">Octaal</option>
+    <option value="9||nonary">9-tallig stelsel</option>
+    <option value="10||decimal">Decimaal</option>
+    <option value="11||undecimal">11-tallig stelsel</option>
+    <option value="12||duodecimal">12-tallig stelsel</option>
+    <option value="13||base 13">13-tallig stelsel</option>
+    <option value="16||hexadecimal" selected="selected">Hexadecimaal</option>
+    <option value="20||vigesimal">20-tallig stelsel</option>
+    <option disabled="disabled">&nbsp;</option>
+    <option disabled="disabled" class="title">Getalsysteem</option>
+    <option value="A||arabic">Arabisch-Indische cijfers</option>
+    <option value="R||Roman">Romeinse cijfers</option>
+    </select>
+    
+    
+    
+    
+    <a href="#" onclick="execute_numerals_ext(true);return false;">
+    <button alt="Omzetten" title="Omzetten" width="36" height="36">omzetten</button>
+    </a>
+    </p>
+    </form>
+</section>
+  </body>
+  <script src="js/home.js"></script>
+  <script src="js/omreken.js"></script>
+</html>
