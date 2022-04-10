@@ -6,7 +6,7 @@
         <meta http-equiv="language" content="NL">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
-        <meta name="author" content="Mitchanok Marcano">
+        <meta name="author" content="Math Mate Team">
         <meta name="keywords" content="">
         <title>Math Mate</title>
         <link rel="icon" href="images/MicrosoftTeams-image-removebg-preview.png" type="image/icon type">
@@ -37,16 +37,13 @@
     <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
     <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
   </ul>
-  <section id="main">
-  <form id="conv_numerals_ext" class="extended-form" action="/nl/talstelsel/" onsubmit="execute_numerals_ext(true); return false;" method="post">
-
-    <p style="margin-top: 10px">
-    Typ het aantal <strong>Decimaal</strong> dat u wilt converteren in het tekstvak, om de resultaten in de tabel te zien.</p>
+ <section id="main">
+ <article class="tafelstelsel">
     
     <p style="clear:both">
     <input type="text" value="100" name="amount" aria-label="Hoeveelheid" class="form-control extended-amount didFocus" style="text-align: right;">
     
-    <select name="unit_from" aria-label="Van" id="from_numerals" class="form-control extended-from">
+    <select name="unit_from" aria-label="Van" id="numeral1" class="form-control extended-from">
     <option disabled="disabled" class="title">Positioneel getalsysteem</option>
     <option value="2||binary">Binair</option>
     <option value="3||ternary">3-tallig stelsel</option>
@@ -62,16 +59,9 @@
     <option value="13||base 13">13-tallig stelsel</option>
     <option value="16||hexadecimal">Hexadecimaal</option>
     <option value="20||vigesimal">20-tallig stelsel</option>
-    <option disabled="disabled">&nbsp;</option>
-    <option disabled="disabled" class="title">Getalsysteem</option>
-    <option value="A||arabic">Arabisch-Indische cijfers</option>
-    <option value="R||Roman">Romeinse cijfers</option>
     </select>
-    <a href="#" onclick="converterChange('numerals_ext', false);return false;">
-    <img class="change" src="/static/images/trans.png" alt="Andere conversie" title="Andere conversie" width="16" height="21">
-    </a>
-    
-    <select name="unit_to" aria-label="To" id="to_numerals" class="form-control extended-to less-space">
+     
+    <select name="unit_to" aria-label="To" id="numeral2" class="form-control extended-to less-space">
     <option disabled="disabled" class="title">Positioneel getalsysteem</option>
     <option value="2||binary">Binair</option>
     <option value="3||ternary">3-tallig stelsel</option>
@@ -87,22 +77,16 @@
     <option value="13||base 13">13-tallig stelsel</option>
     <option value="16||hexadecimal" selected="selected">Hexadecimaal</option>
     <option value="20||vigesimal">20-tallig stelsel</option>
-    <option disabled="disabled">&nbsp;</option>
-    <option disabled="disabled" class="title">Getalsysteem</option>
-    <option value="A||arabic">Arabisch-Indische cijfers</option>
-    <option value="R||Roman">Romeinse cijfers</option>
     </select>
-    
-    
-    
-    
-    <a href="#" onclick="execute_numerals_ext(true);return false;">
-    <button alt="Omzetten" title="Omzetten" width="36" height="36">omzetten</button>
+    <button id="stelsel.berekenen" title="Omzetten" width="36" height="36"></button>
+    <span id="omzetten"  title="Omzetten" width="36" height="36"></span>
     </a>
     </p>
     </form>
+</article>
 </section>
   </body>
   <script src="js/home.js"></script>
   <script src="js/omreken.js"></script>
+
 </html>

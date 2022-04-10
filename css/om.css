@@ -2,3 +2,10 @@
     position: relative;
     z-index: 10;
 }
+button{
+    border-radius: 30px;
+    padding: 5px;
+    background-image: linear-gradient(to right, red , orange);
+    color: darkblue;
+    font-size: 1.rem;
+}
