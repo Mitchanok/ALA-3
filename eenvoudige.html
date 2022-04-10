@@ -19,66 +19,56 @@
       <div class="toggle"></div>
     </header>
   </section>
-  <div class="menu">
+  <article class="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="calculator.html">calculator</a></li>
       <li><a href="eenvoudige.html">eenvoudige reeksen</a></li>
       <li><a href="complexe.html">complexe reeksen</a></li>
       <li><a href="omrekenen.html">omrekenen</a></li>
+      <li><a href="presentatie.html">presentatie</a></li>
+     <li><a href="over.html">over ons</a></li>
     </ul>
-  </div>
+  </article>
+
   <section id="cal">
     <h1>Tafels</h1>
     <article class="tafels">
         <p>Aantal</p>
         <input id="tafels.veeld1" type="number" placeholder="nummer" max="30" min="0">
         <p>Tafel</p>
-        <input id="tafels.veeld2" type="number" placeholder="nummer">
+        <input id="tafels.veeld2" type="number" placeholder="nummer" max="30" >
         <button id="tafel.bereken">bereken</button>
         <br>
             <br>
-            <span id="tafels.antwoord"></span>
-            
-  
+            <span id="tafels.antwoord"></span> 
     </article>
-    </section>
-    
-    <section id="cal">
-        <h1>Machten</h1>
+
+          <h1>Machten</h1>
         <article class="machten">
             <p>Grondgetal</p>
             <input id="grondgetal" type="number" placeholder="nummer"  max="30" min="-30"  >
             <p>Exponent</p>
-            <input id="exponent" type="number" placeholder="nummer"  max="15" min="0">
+            <input id="exponent" type="number" placeholder="nummer"  max="15" min="-30">
             <button id="Machten">bereken</button>
             <br>
             <br>
                 <span id="machten.bereken"></span>
         </article>
-        </section>
        
-    
-       
-        <section id="cal">
             <h1>Kwadraten</h1>
             <article class="kwadraten">
                 <p>Maximaale kwadraten</p>
-                <input id="kwadraten" type="number" value="0">
-                <button id="bereken.kwadraten">bereken</button>
+                <input id="kwadraten" type="number" placeholder="nummer" max="30" value="0">
+                <button id="bereken">bereken</button>
                 <br>
                 <br>
                     <span id="kwdraat.antwoord"></span>
+                    
             </article>
-            </section>
-    </body>
-    
-  <ul class="social">
-    <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-    <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-    <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-  </ul>
-  </body>
-  <script src="js/home.js"></script>
+       </section>
+      
+ </body>
+ <script src="js/home.js"></script>
  <script src="java.js" defer></script>
 </html>

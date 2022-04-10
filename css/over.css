@@ -42,6 +42,7 @@ header .logo
   background-size: 25px;
   background-position: center;
   cursor: pointer;
+  overflow-y: none;
 }
 .showcase
 {

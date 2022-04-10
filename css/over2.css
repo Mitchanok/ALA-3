@@ -1,0 +1,87 @@
+.container {
+    position: relative;
+    z-index: 11;
+    width: 1200px;
+    height: 200px;
+    margin: 240px auto;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    z-index: 11;
+  }
+  
+  .box{
+    position: relative;
+    width: calc(350px - 30px);
+    height: calc(270px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    bottom: 15vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: -1;
+  }
+.box4, .box5{
+    position: relative;
+    bottom: 12vh;
+}
+  .box4{
+    position: relative;
+    width: calc(350px - 30px);
+    height: calc(280px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 18%;
+  }
+  
+  .box5{
+    position: relative;
+    width: calc(350px - 30px);
+    height: calc(280px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  h2{
+    text-align: center;
+    margin-top: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 25%;
+    text-align: center;
+  }
+  
+  
+  .footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    margin-top: 30vh;
+  }
+  
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }

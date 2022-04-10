@@ -22,3 +22,22 @@ function insert(num){
     var exp = document.form.textview.value;
     document.form.textview.value = exp.substring(0,exp.length - 1);
    }
+
+
+
+function isEven() {
+    var num = document.getElementById('textview').value;
+if (num%2 == 0)
+
+alert("De gegeven nummer is even");
+else
+alert("De gegeven nummer is oneven ");
+}
+
+function Clear_Text() {
+
+document.getElementById('textview').value ="";
+document.getElementById('textview').focus();
+
+
+}

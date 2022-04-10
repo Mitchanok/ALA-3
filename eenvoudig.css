@@ -1,12 +1,16 @@
 #cal{
-    position: relative;
+    position:relative;
     top:20vh;
     left: 10vh;
-    z-index: 10;
+    z-index: 10; 
+    
 }
+
 
 h1{
     color: azure;
+    position: relative;
+    z-index: 10;
 }
 
 button{
@@ -22,4 +26,10 @@ input{
     border-radius: 10px;
     text-align: center;
 
+}
+
+span{
+    word-spacing: 20px;
+    font-weight: bolder;
+  
 }

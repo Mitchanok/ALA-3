@@ -1,4 +1,3 @@
-
 function tafels(){
     document.getElementById("tafels.antwoord").innerHTML= " ";
     let veeld1 = document.getElementById("tafels.veeld1").value;
@@ -28,9 +27,9 @@ function machten(){
 function kwadraten(){
     document.getElementById("kwdraat.antwoord").innerHTML= " ";
     let getal1 = document.getElementById("kwadraten").value;
-    for(let i =1 ; i <=getal1; i++)
-    {
-        document.getElementById("kwdraat.antwoord").innerHTML = Math.sqrt(getal1);
+    for(i=1 ; i<=getal1; i++){
+        document.getElementById("kwdraat.antwoord").innerHTML +=(i ** 2 + " ")
+    }
 }
-document.getElementById('bereken.kwadraten').addEventListener('click', kwadraten)
-}
+
+document.getElementById('bereken').addEventListener('click', kwadraten);

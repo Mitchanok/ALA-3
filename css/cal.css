@@ -51,7 +51,7 @@ form{
 }
 
 .button.top-button{
-  background: lightblue;
+  background: skyblue;
   border: solid 1.5px #d6d6d6 ;
   color: #fff;
  }
@@ -64,8 +64,18 @@ width: 50%;
 font-size: 22px;
 }
 .button.operator{
-background: lightblue;
+background: rgb(119, 106, 199);
 border-color: #d6d6d6;
 color: #fff;
+font-size: 20px;
+}
+
+input[type="submit"] {
+  background: skyblue;
+ border-color: #d6d6d6;
+ color: #fff;
+ border-radius: 15px;
+ width: 50vh;
+ height: 6vh;
 font-size: 20px;
 }
